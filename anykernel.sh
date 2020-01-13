@@ -29,6 +29,9 @@ ramdisk_compression=auto;
 ## AnyKernel install
 dump_boot;
 
+# remove old root patch avoidance hack
+patch_cmdline "skip_override" "";
+
 write_boot;
 ## end install
 
